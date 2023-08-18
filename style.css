@@ -1,0 +1,141 @@
+h6 {
+    font-family: Poppins;
+    font-size: 22px;
+    font-weight: 500px;
+    color: #F18234;
+    margin-top: 72px;
+    /* margin-left: 12px; */
+}
+
+p {
+    font-family: Poppins;
+    font-size: 14px;
+    color: #707070;
+}
+
+a {
+    color: #F18234;
+    font-family: Poppins;
+    font-size: 14px;
+}
+
+label {
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 48px;
+    letter-spacing: 0.16px;
+}
+
+.form-control {
+    height: 48px;
+    border: 1px solid #707070;
+    margin-bottom: 18px;
+}
+
+.btn-create {
+    font-family: Poppins;
+    margin-top: 14px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    background: #F18234;
+    padding: 15px;
+    color: #fff;
+}
+
+.btn-create:hover {
+    background-color: #e0772c;
+    color: #fff;
+}
+
+.copy {
+    margin-top: 60px;
+}
+
+.copy h5 {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.copy p {
+    color: #000;
+}
+
+.payment-info {
+    border-radius: 12px;
+    background: rgb(225 223 223 / 70%);
+    backdrop-filter: blur(155px);
+}
+
+.card-div {
+    display: flex;
+    justify-content: center;
+}
+
+.card-1 {
+    width: 197px;
+    height: 283px;
+    border-radius: 20px;
+    background: linear-gradient(180deg, rgba(0, 0, 35, 0.16) 0%, rgba(255, 255, 255, 0.20) 100%);
+    backdrop-filter: blur(65px);
+    padding: 17px;
+}
+
+.card-number label {
+    color: #FFF;
+    font-family: Segoe UI;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.card-number p {
+    color: rgba(255, 255, 255, 0.60);
+    font-family: Segoe UI;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.valid-cvv label {
+    color: #FFF;
+    font-family: Segoe UI;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.valid-cvv p {
+    color: rgba(255, 255, 255, 0.60);
+    font-family: Segoe UI;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.subtract {
+    margin-top: -143px;
+    margin-bottom: -22px;
+}
+
+@media (max-width: 992px) {
+    .img-div img {
+        display: none;
+    }
+    .copy {
+        justify-content: center;
+        text-align: center;
+    }
+    .copy h5 {
+        font-family: Poppins;
+        font-size: 14px;
+        font-weight: 400;
+    }
+}
