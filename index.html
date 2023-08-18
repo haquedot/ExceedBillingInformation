@@ -45,7 +45,7 @@
                             <input type="number" class="form-control" id="zipcode" placeholder="Zip">
                         </div>
                         <button type="submit" class="btn-create container-fluid">
-                        Make payment
+                            <i class="bi bi-lock me-1"></i>Make payment
                     </button>
                     </form>
                 </div>
@@ -71,50 +71,59 @@
 
             </div>
             <div class="col-lg-6 row payment-info m-0">
-                <div class="col-lg-7">
-                    <div class="form-group">
-                        <label for="cardType">Card type</label>
-                        <select class="form-control form-select" id="cardType">
+                <div class="col-lg-6">
+                    <h5>Payment Information</h5>
+                    <form action="">
+                        <div class="form-group">
+                            <label for="cardType">Card type</label>
+                            <select class="form-control form-select" id="cardType">
                         <option>Visa</option>
                         <option>.</option>
                         <option>.</option>
                         <option>.</option>
                     </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="cardNumber">Card Number</label>
-                        <input type="password" class="form-control" id="city" placeholder="XXXX - XXXX - XXXX">
-                    </div>
-                    <div class="d-flex">
-                        <div class="form-group me-1">
-                            <label for="month">Expiry month</label>
-                            <input type="number" class="form-control" id="month" placeholder="XX">
                         </div>
-                        <div class="form-group ms-1">
-                            <label for="year">Expiry year</label>
-                            <input type="number" class="form-control" id="year" placeholder="XXXX">
+                        <div class="form-group">
+                            <label for="cardNumber">Card Number</label>
+                            <input type="password" class="form-control" id="city" placeholder="XXXX - XXXX - XXXX">
                         </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="security">Security Code</label>
-                        <input type="password" class="form-control" id="security" placeholder="XXX">
-                    </div>
+                        <div class="d-flex">
+                            <div class="form-group me-1">
+                                <label for="month">Expiry month</label>
+                                <input type="number" class="form-control" id="month" placeholder="XX">
+                            </div>
+                            <div class="form-group ms-1">
+                                <label for="year">Expiry year</label>
+                                <input type="number" class="form-control" id="year" placeholder="XXXX">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="security">Security Code</label>
+                            <input type="password" class="form-control" id="security" placeholder="XXX">
+                        </div>
+                    </form>
                 </div>
-                <div class="col-lg-5 py-2">
-
+                <div class="col-lg-6 py-2">
                     <div class="card-1 container-fluid">
+                        <div class="img-div">
+                            <img src="Group 1.svg" alt="">
+                        </div>
                         <div class="card-number">
                             <label for="cardNumber">CARD NUMBER</label>
                             <p>XXXX - XXXX - XXXX - XXXX</p>
                         </div>
                         <div class="row valid-cvv">
-                            <div class="col-lg-6">
-                                <label for="valid">Valid</label>
-                                <p>01/25</p>
+                            <div class="col-lg-6 valid">
+                                <div class="">
+                                    <label for="valid">Valid</label>
+                                    <p>01/25</p>
+                                </div>
                             </div>
-                            <div class="col-lg-6">
-                                <label for="valid">CVV</label>
-                                <p>345</p>
+                            <div class="col-lg-6 cvv">
+                                <div class="">
+                                    <label for="valid">CVV</label>
+                                    <p>345</p>
+                                </div>
                             </div>
                         </div>
                     </div>
