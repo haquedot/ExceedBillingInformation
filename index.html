@@ -77,22 +77,20 @@
                         <div class="form-group">
                             <label for="cardType">Card type</label>
                             <select class="form-control form-select" id="cardType">
-                        <option>Visa</option>
-                        <option>.</option>
-                        <option>.</option>
-                        <option>.</option>
-                    </select>
+                                <option>Master card</option>
+                                <option>Visa</option>
+                            </select>
                         </div>
                         <div class="form-group">
                             <label for="cardNumber">Card Number</label>
                             <input type="password" class="form-control" id="city" placeholder="XXXX - XXXX - XXXX">
                         </div>
-                        <div class="d-flex">
-                            <div class="form-group me-1">
+                        <div class="d-flex month-year">
+                            <div class="form-group me-1 month">
                                 <label for="month">Expiry month</label>
                                 <input type="number" class="form-control" id="month" placeholder="XX">
                             </div>
-                            <div class="form-group ms-1">
+                            <div class="form-group ms-1 year">
                                 <label for="year">Expiry year</label>
                                 <input type="number" class="form-control" id="year" placeholder="XXXX">
                             </div>
@@ -105,7 +103,7 @@
                 </div>
                 <div class="col-lg-6 py-2">
                     <div class="card-1 container-fluid">
-                        <div class="img-div">
+                        <div class="img-div ">
                             <img src="Group 1.svg" alt="">
                         </div>
                         <div class="card-number">
@@ -127,10 +125,32 @@
                             </div>
                         </div>
                     </div>
-                    <div class="subtract">
-                        <img class="img-fluid" src="Subtract.svg" alt="">
-                    </div>
+                    <div class="subtract d-block">
+                        <img class="img-fluid hide-show" src="Subtract.svg" alt="">
+                        <div class="subtract-img">
+                            <img class="img-fluid" src="Subtract-mob.svg" alt="">
+                        </div>
 
+                        <div class="subtract-content p-4 pt-0">
+                            <div class="d-flex">
+                                <span class="d-flex justify-content-left">Items</span>
+                                <p class="d-flex justify-content-right">2</p>
+                            </div>
+                            <div class="d-flex">
+                                <span class="d-flex justify-content-left">Sub total</span>
+                                <p class="d-flex justify-content-right">$750</p>
+                            </div>
+                            <div class="d-flex">
+                                <span class="d-flex justify-content-left">HST</span>
+                                <p class="d-flex justify-content-right">$30</p>
+                            </div>
+                            <hr>
+                            <div class="d-flex">
+                                <span class="d-flex justify-content-left">You have to pay</span>
+                                <p class="d-flex justify-content-right">$780</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

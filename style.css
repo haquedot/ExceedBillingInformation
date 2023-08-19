@@ -91,6 +91,18 @@ label {
     justify-content: right;
 }
 
+.month-year {
+    width: 100%;
+}
+
+.month {
+    width: 50%;
+}
+
+.year {
+    width: 50%;
+}
+
 .card-1 {
     width: 197px;
     height: 283px;
@@ -157,9 +169,57 @@ label {
 .subtract {
     display: flex;
     justify-content: center;
-    background-image: url(Subtract.svg);
+    /* background-image: url(Subtract.svg); */
     margin-top: -143px;
     /* margin-bottom: -22px; */
+}
+
+.subtract-content {
+    z-index: 1;
+    margin-top: -181px;
+}
+
+.subtract-content span {
+    color: #707070;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 34px;
+    /* 242.857% */
+    letter-spacing: 0.14px;
+}
+
+.subtract-content p {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 34px;
+    /* 242.857% */
+    letter-spacing: 0.14px;
+}
+
+.subtract-content hr {
+    border-top: 2px dashed #FFF;
+}
+
+.subtract-img {
+    display: none;
+}
+
+.justify-content-left {
+    width: 70%;
+    justify-content: left;
+    align-items: center;
+}
+
+.justify-content-right {
+    width: 30%;
+    justify-content: right;
+    align-items: center;
+    margin: 0;
 }
 
 @media (max-width: 992px) {
@@ -174,5 +234,18 @@ label {
         font-family: Poppins;
         font-size: 14px;
         font-weight: 400;
+    }
+    .payment-info {
+        background: none;
+        backdrop-filter: none;
+    }
+    .card-1 {
+        transform: rotate(-90deg);
+    }
+    .hide-show {
+        display: none;
+    }
+    .subtract-img {
+        display: flex;
     }
 }
