@@ -135,6 +135,7 @@ label {
 }
 
 .valid-cvv {
+    display: flex;
     margin-top: 104px;
 }
 
@@ -222,6 +223,10 @@ label {
     margin: 0;
 }
 
+.subtract-div {
+    justify-content: center;
+}
+
 @media (max-width: 992px) {
     .img-div img {
         display: none;
@@ -247,5 +252,19 @@ label {
     }
     .subtract-img {
         display: flex;
+    }
+    .card-number {
+        margin-top: 121px;
+        margin-right: -126px;
+        transform: rotate(90deg);
+    }
+    .valid-cvv {
+        height: 123%;
+        width: 155%;
+        padding-top: 222px;
+        display: flex;
+        transform: rotate(90deg);
+        margin-top: -205px;
+        margin-right: 37px;
     }
 }
