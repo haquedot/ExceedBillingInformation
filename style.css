@@ -240,6 +240,7 @@ label {
 
 @media (max-width: 992px) {
     h5 {
+        margin: 0;
         font-size: 16px;
         font-weight: 400;
         line-height: 48px;
@@ -275,6 +276,7 @@ label {
     }
     .subtract-img {
         display: flex;
+        height: 40vh;
         z-index: -1;
     }
     .subtract-img img {
@@ -302,7 +304,7 @@ label {
     }
     .form-mob {
         display: block;
-        margin-top: -235px;
+        margin-top: -335px;
         background-color: #000025;
     }
     .form-mob label {
