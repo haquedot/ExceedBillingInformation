@@ -51,7 +51,7 @@ label {
 
 .btn-create {
     font-family: Poppins;
-    margin-top: 14px;
+    margin-bottom: 14px;
     text-align: center;
     border: none;
     border-radius: 5px;
@@ -313,6 +313,10 @@ label {
     }
     .subtract-content {
         margin-top: -1px;
+        background-color: #000025;
+    }
+    .btn-div {
+        padding: 14px;
         background-color: #000025;
     }
 }
