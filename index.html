@@ -21,7 +21,7 @@
         <div class="row">
             <h6>Billing Information</h6>
             <div class="col-lg-6 row m-0">
-                <div class="col-lg-6">
+                <div class="col-lg-6 p-0">
                     <form action="">
                         <div class="form-group">
                             <label for="firstName">First Name</label>
@@ -49,7 +49,7 @@
                     </button>
                     </form>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 p-0">
                     <div class="form-group">
                         <label for="lastName">Last Name</label>
                         <input type="text" class="form-control" id="lastName" placeholder="One">
@@ -71,56 +71,61 @@
 
             </div>
             <div class="col-lg-6 row payment-info m-0 p-0">
-                <div class="col-lg-6">
-                    <h5>Payment Information</h5>
-                    <form action="">
+                <h5 class="show-mob">Payment Information</h5>
+                <div class="col-lg-6 order-2 order-lg-1">
+                    <h5 class="hide-mob">Payment Information</h5>
+                    <form action="" class="hide-mob">
                         <div class="form-group">
                             <label for="cardType">Card type</label>
-                            <select class="form-control form-select" id="cardType">
-                                <option>Master card</option>
-                                <option>Visa</option>
+                            <select class="form-control form-select" id="cardType" onchange="updateCardLogo()">
+                                <option value="mastercard">Master card</option>
+                                <option value="visa">Visa</option>
                             </select>
                         </div>
                         <div class="form-group">
                             <label for="cardNumber">Card Number</label>
-                            <input type="password" class="form-control" id="city" placeholder="XXXX - XXXX - XXXX">
+                            <input type="password" class="form-control" id="cardNumber" oninput="updateCardNumber()" placeholder="XXXX - XXXX - XXXX">
                         </div>
                         <div class="d-flex month-year">
                             <div class="form-group me-1 month">
                                 <label for="month">Expiry month</label>
-                                <input type="number" class="form-control" id="month" placeholder="XX">
+                                <input type="number" class="form-control" id="month" oninput="updateMonth()" placeholder="XX">
                             </div>
                             <div class="form-group ms-1 year">
                                 <label for="year">Expiry year</label>
-                                <input type="number" class="form-control" id="year" placeholder="XXXX">
+                                <input type="number" class="form-control" id="year" oninput="updateYear()" placeholder="XXXX">
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="security">Security Code</label>
-                            <input type="password" class="form-control" id="security" placeholder="XXX">
+                            <input type="password" class="form-control" id="security" oninput="updateSecurity()" placeholder="XXX">
                         </div>
                     </form>
                 </div>
-                <div class="col-lg-6 py-2 p-0">
+                <div class="col-lg-6 order-1 order-lg-2 pt-2 p-0">
                     <div class="card-1 container-fluid">
                         <div class="img-div ">
-                            <img src="Group 1.svg" alt="">
+                            <img id="cardLogo" src="" alt="">
                         </div>
                         <div class="card-number">
                             <label for="cardNumber">CARD NUMBER</label>
-                            <p>XXXX - XXXX - XXXX - XXXX</p>
+                            <p id="cardNumberOut">XXXX - XXXX - XXXX - XXXX</p>
                         </div>
                         <div class="valid-cvv">
                             <div class=" valid justify-content-left">
                                 <div class="">
                                     <label for="valid">Valid</label>
-                                    <p>01/25</p>
+                                    <div class="d-flex">
+                                        <p id="monthOut">01</p>
+                                        <p>/</p>
+                                        <p id="yearOut">25</p>
+                                    </div>
                                 </div>
                             </div>
                             <div class="cvv justify-content-right">
                                 <div class="">
-                                    <label for="valid">CVV</label>
-                                    <p>345</p>
+                                    <label>CVV</label>
+                                    <p id="cvvOut">345</p>
                                 </div>
                             </div>
                         </div>
@@ -131,6 +136,33 @@
                             <div class="subtract-img">
                                 <img class="img-fluid" src="Subtract-mob.svg" alt="">
                             </div>
+                            <form action="" class="form-mob p-2">
+                                <div class="form-group">
+                                    <label for="cardType">Card type</label>
+                                    <select class="form-control form-select" id="cardType" onchange="updateCardLogo()">
+                                        <option value="mastercard">Master card</option>
+                                        <option value="visa">Visa</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="cardNumber">Card Number</label>
+                                    <input type="password" class="form-control" id="cardNumber" oninput="updateCardNumber()" placeholder="XXXX - XXXX - XXXX">
+                                </div>
+                                <div class="d-flex month-year">
+                                    <div class="form-group me-1 month">
+                                        <label for="month">Expiry month</label>
+                                        <input type="number" class="form-control" id="month" oninput="updateMonth()" placeholder="XX">
+                                    </div>
+                                    <div class="form-group ms-1 year">
+                                        <label for="year">Expiry year</label>
+                                        <input type="number" class="form-control" id="year" oninput="updateYear()" placeholder="XXXX">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="security">Security Code</label>
+                                    <input type="password" class="form-control" id="security" oninput="updateSecurity()" placeholder="XXX">
+                                </div>
+                            </form>
 
                             <div class="subtract-content p-4 pt-0">
                                 <div class="d-flex">
@@ -157,6 +189,8 @@
             </div>
         </div>
     </div>
+    <script src="script.js"></script>
+
 </body>
 
 </html>

@@ -39,6 +39,10 @@ label {
     letter-spacing: 0.16px;
 }
 
+.form-group {
+    padding-right: 8px;
+}
+
 .form-control {
     height: 48px;
     border: 1px solid #707070;
@@ -176,7 +180,6 @@ label {
 }
 
 .subtract-content {
-    z-index: 1;
     margin-top: -181px;
 }
 
@@ -227,9 +230,29 @@ label {
     justify-content: center;
 }
 
+.form-mob {
+    display: none;
+}
+
+.show-mob {
+    display: none;
+}
+
 @media (max-width: 992px) {
+    h5 {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 48px;
+        letter-spacing: 0.16px;
+    }
+    .form-group {
+        padding-right: 0;
+    }
     .img-div img {
-        display: none;
+        margin: -10px;
+        margin-bottom: -440px;
+        display: block;
+        transform: rotate(90deg);
     }
     .copy {
         justify-content: center;
@@ -252,6 +275,10 @@ label {
     }
     .subtract-img {
         display: flex;
+        z-index: -1;
+    }
+    .subtract-img img {
+        z-index: -1;
     }
     .card-number {
         margin-top: 121px;
@@ -266,5 +293,23 @@ label {
         transform: rotate(90deg);
         margin-top: -205px;
         margin-right: 37px;
+    }
+    .hide-mob {
+        display: none;
+    }
+    .show-mob {
+        display: block;
+    }
+    .form-mob {
+        display: block;
+        margin-top: -235px;
+        background-color: #000025;
+    }
+    .form-mob label {
+        color: #fff;
+    }
+    .subtract-content {
+        margin-top: -1px;
+        background-color: #000025;
     }
 }
