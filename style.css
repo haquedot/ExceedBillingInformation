@@ -276,7 +276,8 @@ label {
     }
     .subtract-img {
         display: flex;
-        height: 40vh;
+        height: 100%;
+        margin-top: -130px;
         z-index: -1;
     }
     .subtract-img img {
