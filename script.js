@@ -31,7 +31,6 @@ function updateYear() {
 }
 
 function updateSecurity() {
-
     if (cvvInput <= 999) {
         document.getElementById("cvvOut").textContent = cvvInput;
     }
