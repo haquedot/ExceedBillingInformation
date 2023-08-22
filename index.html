@@ -77,28 +77,28 @@
                     <form action="" class="hide-mob">
                         <div class="form-group">
                             <label for="cardType">Card type</label>
-                            <select class="form-control form-select" id="cardType" onchange="updateCardLogo()">
+                            <select class="form-control form-select" id="cardType" onchange="updateCardLogo()" required>
                                 <option value="mastercard">Master card</option>
                                 <option value="visa">Visa</option>
                             </select>
                         </div>
                         <div class="form-group">
                             <label for="cardNumber">Card Number</label>
-                            <input type="password" class="form-control" id="cardNumber" oninput="updateCardNumber()" placeholder="XXXX - XXXX - XXXX">
+                            <input type="password" class="form-control" id="cardNumber" maxlength="16" oninput="updateCardNumber()" placeholder="XXXX - XXXX - XXXX" required>
                         </div>
                         <div class="d-flex month-year">
                             <div class="form-group me-1 month">
                                 <label for="month">Expiry month</label>
-                                <input type="number" class="form-control" id="month" oninput="updateMonth()" placeholder="XX">
+                                <input type="number" class="form-control" id="month" min="1" max="12" maxlength="2" oninput="updateMonth()" placeholder="XX" required>
                             </div>
                             <div class="form-group ms-1 year">
                                 <label for="year">Expiry year</label>
-                                <input type="number" class="form-control" id="year" oninput="updateYear()" placeholder="XXXX">
+                                <input type="number" class="form-control" id="year" maxlength="4" oninput="updateYear()" placeholder="XXXX" required>
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="security">Security Code</label>
-                            <input type="password" class="form-control" id="security" oninput="updateSecurity()" placeholder="XXX">
+                            <input type="password" class="form-control" id="security" maxlength="3" oninput="updateSecurity()" placeholder="XXX" required>
                         </div>
                     </form>
                 </div>

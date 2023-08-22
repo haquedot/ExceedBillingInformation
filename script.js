@@ -1,30 +1,39 @@
+// function moveToNextInput(currentInput, nextInput) {
+//     if (currentInput.value.length >= currentInput.maxLength) {
+//         nextInput.focus();
+//     }
+// }
+var monthInput = document.getElementById("month");
+var yearInput = document.getElementById("year");
+var cvvInput = document.getElementById("security");
+var cardNumber = document.getElementById("cardNumber");
+
+
 function updateCardNumber() {
-    var cardNumber = document.getElementById("cardNumber").value;
-    if (cardNumber <= 9999999999999999) {
-        document.getElementById("cardNumberOut").textContent = cardNumber;
+    document.getElementById("cardNumberOut").textContent = cardNumber.value;
+    if (cardNumber.value.length === 16) {
+        monthInput.focus();
     }
 }
 
 function updateMonth() {
-    var month = document.getElementById("month").value;
-    if (month <= 12) {
-        document.getElementById("monthOut").textContent = month;
+    document.getElementById("monthOut").textContent = monthInput.value;
+    if (monthInput.value.length === 2) {
+        yearInput.focus();
     }
 }
 
 function updateYear() {
-    var year = document.getElementById("year").value;
-
-    if (year <= 9999) {
-        document.getElementById("yearOut").textContent = year;
+    document.getElementById("yearOut").textContent = yearInput.value;
+    if (yearInput.value.length === 4) {
+        cvvInput.focus();
     }
 }
 
 function updateSecurity() {
-    var cvv = document.getElementById("security").value;
 
-    if (cvv <= 999) {
-        document.getElementById("cvvOut").textContent = cvv;
+    if (cvvInput <= 999) {
+        document.getElementById("cvvOut").textContent = cvvInput;
     }
 }
 
